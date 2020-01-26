@@ -2,7 +2,7 @@
 
 namespace Labs_3
 {
-    class Country
+    public class Country
     {
         private string _code;
         private string _name;

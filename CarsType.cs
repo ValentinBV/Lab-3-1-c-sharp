@@ -1,6 +1,6 @@
 ﻿namespace Labs_3
 {
-    enum CarsType : byte
+    public enum CarsType : byte
     {
         Sedan,
         Minivan,

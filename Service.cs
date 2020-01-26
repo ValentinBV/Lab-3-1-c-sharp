@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Labs_3
 {
-    class Service
+    public class Service
     {
         private string _clientName;
         private string _staffName;
@@ -24,7 +24,10 @@ namespace Labs_3
         {
             _cars.RemoveAt(id);
         }
-
+        public List<Car> GetCarsCollection()
+        {
+            return _cars;
+        }
         public string StaffName
         {
             get

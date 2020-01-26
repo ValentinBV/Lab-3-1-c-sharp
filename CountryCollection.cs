@@ -2,7 +2,7 @@
 
 namespace Labs_3
 {
-    class CountryCollection
+    public class CountryCollection
     {
         private List<Country> _country = new List<Country>();
 
@@ -10,7 +10,7 @@ namespace Labs_3
         {
             _country.Add(country);
         }
-        public List<Country> getCollection()
+        public List<Country> GetCollection()
         {
             return _country;
         }

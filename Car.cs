@@ -2,12 +2,12 @@
 
 namespace Labs_3
 {
-    abstract class Car
+    abstract public class Car
     {
-        private CarsType carsType;
-        private float _weight;
-        private int _year;
-        private Country _country;
+        protected CarsType carsType;
+        protected float _weight;
+        protected int _year;
+        public Country Country { get; set; }
 
         public Car(CarsType type)
         {
@@ -55,24 +55,6 @@ namespace Labs_3
             get
             {
                 return _year;
-            }
-        }
-
-        public Country Country
-        {
-            get
-            {
-                return _country;
-            }
-            set
-            {
-                if (value.GetType() == typeof(Country))
-                {
-                    _country = value;
-                } else
-                {
-                    throw new ArgumentException("Value must be instance of Country object");
-                }
             }
         }
     }
