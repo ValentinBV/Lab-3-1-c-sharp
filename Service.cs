@@ -7,6 +7,7 @@ namespace Labs_3
     [Serializable]
     public class Service
     {
+        public string name = "SERVICE";
         private string _clientName;
         private string _staffName;
         private List<Car> _cars = new List<Car>();
