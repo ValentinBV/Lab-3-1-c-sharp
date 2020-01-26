@@ -5,10 +5,14 @@ namespace Labs_3
     abstract public class Car
     {
         protected CarsType carsType;
-        protected float _weight;
-        protected int _year;
+        private float _weight;
+        private int _year;
         public Country Country { get; set; }
 
+        public Car()
+        {
+
+        }
         public Car(CarsType type)
         {
             carsType = type;

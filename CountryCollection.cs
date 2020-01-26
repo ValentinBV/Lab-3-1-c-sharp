@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System;
 
 namespace Labs_3
 {
+    [Serializable]
     public class CountryCollection
     {
         private List<Country> _country = new List<Country>();

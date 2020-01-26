@@ -4,12 +4,17 @@ using System.Text;
 
 namespace Labs_3
 {
+    [Serializable]
     public class Service
     {
         private string _clientName;
         private string _staffName;
         private List<Car> _cars = new List<Car>();
 
+        public Service()
+        {
+ 
+        }
         public Service(string staffName, string clientName)
         {
             _clientName = clientName;

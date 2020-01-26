@@ -2,11 +2,16 @@
 
 namespace Labs_3
 {
+    [Serializable]
     public class Country
     {
         private string _code;
         private string _name;
 
+        public Country()
+        {
+
+        }
         public Country(string codeValue, string nameValue)
         {
             if (codeValue.Length > 3 || codeValue.Length < 1)
